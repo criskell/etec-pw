@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho ETEC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+        }
+
+        .none-item {
+            display: none;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .block-item {
+            display: block;
+        }
+
+        .item {
+            background-color: #C6D0D8;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 15px;
+            vertical-align: top;
+        }
+
+        .box-title {
+            font-size: 30px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .group-item {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        h1 {
+            color: #888;
+            font-size: 40px;
+            display: inline-block;
+            margin-left: 100px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+
+        .inline-block-item {
+            display: inline-block;
+        }
+
+        .item-list {
+            padding: 30px 20px;
+            background-color: #008080;
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        .first-group-item {
+            width: 250px;
+        }
+
+        .second-group-item {
+            width: 350px;
+            margin: 0 40px;
+        }
+
+        .third-group-item {
+            width: 400px;
+        }
+
+        .none-box {
+            margin-top: 20px;
+        }
+        
+        .inline-item {
+            display: inline-block;
+            height: 25px;
+            width: 30%;
+        }
+        
+        .second-inline-item {
+            width: 18%;
+        }
+
+        .third-inline-item {
+            width: 10%;
+        }
+
+        .second-group-item .item-list {
+            height: 142px;
+        }
+
+        .third-inline-block-item {
+            height: 105px;
+        }
+        
+        .fourth-inline-block-item {
+            height: 25px;
+            margin-top: 20px;
+        }
+
+        .wrapper {
+            margin: 0 80px;
+        }
+
+        .header {
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="icon.png" />
+
+            <h1>Display: Block, Inline, Inline-Block e None</h1>
+        </div>
+
+        <div class="group">
+            <div class="box group-item first-group-item">
+                <h2 class="box-title">Block</h2>
+                
+                <div class="item-list" style="width: 250px">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="group-item second-group-item">
+                <div class="box">
+                    <h2 class="box-title">Inline</h2>
+                    
+                    <div class="item-list">
+                        <div class="item inline-item"></div>
+                        <div class="item inline-item second-inline-item"></div>
+                        <div class="item inline-item third-inline-item"></div>
+                        <div class="item inline-item"></div>
+                    </div>
+                </div>  
+                <div class="box none-box">
+                    <h2 class="box-title">None</h2>
+                    
+                    <div class="item-list">
+                        <div class="item none-item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-item box third-group-item">
+                <h2 class="box-title">Inline-Block</h2>
+
+                <div class="item-list">
+                    <div class="item inline-block-item"></div>
+                    <div class="item inline-block-item"></div>
+                    <div class="item inline-block-item third-inline-block-item"></div>
+                    <div class="item inline-block-item fourth-inline-block-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
